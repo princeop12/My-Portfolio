@@ -51,6 +51,7 @@ header menu{}
   margin: 0 auto; /* Centers container */
   font-family: "Times New Roman", Times, serif;
   color: #ffffff; /* Adjust color as needed */
+  font-weight: bold;
 }
 
 .word {
@@ -69,12 +70,12 @@ header menu{}
 /* Scaling and fading animation */
 @keyframes scaleAndFade {
   0% {
-    font-size: 2rem;
+    font-size: 1.5rem;
     opacity: 0;
     transform: scale(1);
   }
   100% {
-    font-size: 5rem;
+    font-size: 4rem;
     opacity: 1;
     transform: scale(1.2); /* Slight overscale for effect */
   }
