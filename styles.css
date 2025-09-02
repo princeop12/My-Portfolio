@@ -85,6 +85,21 @@ header menu{}
     transform: scale(1.2); /* Slight overscale for effect */
   }
 }
+
+#Contact img{
+    width: 3.5rem;
+    border: 2px solid white;
+    height: 3.5rem;
+    border-radius: 15px;
+}
+.contact-flex{
+    display: flex;
+    /* border:1px solid white; */
+    width: 70%;
+    justify-self: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
 @media (min-width: 769px) {
     header nav ul{
     display: flex;
