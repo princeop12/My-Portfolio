@@ -142,6 +142,8 @@ header nav ul{
 
 /* Optional: Style the navigation links */
 .nav-menu ul {
+  backdrop-filter: blur(2px); /* Blur effect */
+  -webkit-backdrop-filter: blur(2px); /* Safari support */
   list-style: none;
   padding: 0;
   position: fixed;
@@ -152,11 +154,9 @@ header nav ul{
   right: 0;
   border: 2px solid white;
   border-radius: 5px;
-  background-color: black;
 }
 
 .nav-menu li {
-      background-color: black;
   text-align: center;
   margin: 10px 0;
 }
@@ -166,9 +166,8 @@ header nav ul{
 }
 
 .nav-menu a {
-  backdrop-filter: blur(2px); /* Blur effect */
-  -webkit-backdrop-filter: blur(2px); /* Safari support */
-  text-decoration: none;
+  /* border: 1px solid; */
+  text-decoration: underline 2px;
   color: white;
 }
 
