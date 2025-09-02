@@ -98,7 +98,7 @@ header menu{}
     width: 70%;
     justify-self: center;
     justify-content: space-between;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 @media (min-width: 769px) {
     header nav ul{
