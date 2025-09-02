@@ -142,6 +142,7 @@ header nav ul{
 
 /* Optional: Style the navigation links */
 .nav-menu ul {
+    z-index: 1000;
   backdrop-filter: blur(2px); /* Blur effect */
   -webkit-backdrop-filter: blur(2px); /* Safari support */
   list-style: none;
