@@ -48,7 +48,7 @@ header menu{}
   justify-content: center; /* Centers text */
   width: 85%; /* 85% of parent width */
   max-width: 800px; /* Max width of 800px */
-  margin: 0 auto; /* Centers container */
+  margin: 80px auto; /* Centers container */
   font-family: "Times New Roman", Times, serif;
   color: #ffffff; /* Adjust color as needed */
   font-weight: bold;
