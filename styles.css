@@ -51,7 +51,7 @@ header menu{}
   margin: 50px auto; /* Centers container */
   font-family: "Times New Roman", Times, serif;
   color: #ffffff; /* Adjust color as needed */
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .word {
