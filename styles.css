@@ -42,7 +42,44 @@ header nav ul li a{
 }
 header menu{}
 
-@media (max-width: 500px) {
+#welcome-text {
+  display: flex;
+  flex-wrap: wrap; /* Allows words to wrap */
+  justify-content: center; /* Centers text */
+  width: 85%; /* 85% of parent width */
+  max-width: 800px; /* Max width of 800px */
+  margin: 0 auto; /* Centers container */
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff; /* Adjust color as needed */
+}
+
+.word {
+  display: inline-flex; /* Keeps letters of a word together */
+  margin-right: 0.5rem; /* Space between words */
+}
+
+
+.letter {
+  display: inline-block; /* Inline for individual animation */
+  font-size: 2rem; /* Default starting size for desktop */
+  opacity: 0; /* Start invisible */
+  animation: scaleAndFade 0.3s ease forwards; /* Animation for each letter */
+}
+
+/* Scaling and fading animation */
+@keyframes scaleAndFade {
+  0% {
+    font-size: 2rem;
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    font-size: 5rem;
+    opacity: 1;
+    transform: scale(1.2); /* Slight overscale for effect */
+  }
+}
+@media (max-width: 768px) {
 
     header{
     padding: 7px;
@@ -67,6 +104,22 @@ header nav ul{
     display: flex;
     gap: 20px;
 }
+
+.letter {
+    font-size: 1rem; /* Mobile starting size */
+  }
+  @keyframes scaleAndFade {
+    0% {
+      font-size: 1rem;
+      opacity: 0;
+      transform: scale(1);
+    }
+    100% {
+      font-size: 1.5rem; /* Mobile scale-up size */
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
 }
 
 /* Container for the 3D rotation effect */

@@ -37,3 +37,45 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.style.transform = `rotateY(${rotationY % 360}deg)`;
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const welcomeText = "Welcome to my Portfolio";
+  const textContainer = document.getElementById('welcome-text');
+  const animationDuration = 3000; // 3 seconds for entire animation
+  const delayBeforeStart = 1000; // 1 second delay before starting
+
+  // Split text into words
+  const words = welcomeText.split(' ');
+
+  // Calculate total number of letters for timing
+  const totalLetters = welcomeText.replace(/\s/g, '').length;
+  const delayPerLetter = animationDuration / totalLetters;
+
+  // Start animation after 1 second
+  setTimeout(() => {
+    let letterIndex = 0; // Track overall letter index for timing
+    words.forEach((word, wordIndex) => {
+      // Create a span for each word
+      const wordSpan = document.createElement('span');
+      wordSpan.classList.add('word');
+
+      // Split word into letters
+      const letters = word.split('');
+      letters.forEach((letter) => {
+        const letterSpan = document.createElement('span');
+        letterSpan.textContent = letter;
+        letterSpan.classList.add('letter');
+        letterSpan.style.animationDelay = `${letterIndex * delayPerLetter}ms`; // Staggered delay
+        wordSpan.appendChild(letterSpan);
+        letterIndex++;
+      });
+
+      // Add space after each word (except the last)
+      if (wordIndex < words.length - 1) {
+        wordSpan.appendChild(document.createTextNode('\u00A0')); // Non-breaking space
+      }
+
+      textContainer.appendChild(wordSpan);
+    });
+  }, delayBeforeStart);
+});
