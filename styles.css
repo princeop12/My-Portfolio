@@ -1,0 +1,86 @@
+body{
+    background: black;
+    color: white;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+}
+
+.header-profile{
+    gap: 20px;
+    display: flex;
+}
+header img{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 4px;
+}
+header h1{
+    font-size: 1.5rem
+}
+header nav{}
+header nav ul{
+    display: flex;
+    gap: 30px;
+}
+header nav ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+header nav ul li a{
+    color: white;
+    cursur: pointer;
+    text-decoration: none
+}
+header menu{}
+
+/* Container for the 3D rotation effect */
+.image-container {
+  margin-top: -70px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 10000px; /* Creates 3D depth */
+  user-select: none; /* Prevents text selection during drag */
+  touch-action: none; /* Improves touch behavior */
+}
+
+/* Wrapper for front and back images */
+.image-wrapper {
+  position: relative;
+  width: 50px; /* Adjust to your image size */
+  /* height: 300px; Adjust to your image size */
+  transform-style: preserve-3d; /* Enables 3D transformations */
+  animation: spin 5s linear infinite; /* Infinite 3D rotation */
+}
+
+/* Animation for infinite 3D rotation */
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Front and back images */
+.front-image,
+.back-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible; /* Ensures both sides are visible */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Back image is mirrored and rotated 180 degrees */
+.back-image {
+  transform: rotateY(180deg) scaleX(-1); /* Mirrors horizontally and faces opposite */
+}
