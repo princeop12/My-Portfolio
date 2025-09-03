@@ -259,9 +259,10 @@ header nav ul{
 }
 .leaf{
   justify-content: space-around;
+  margin: 20px auto 60px auto;
 }
 .leaf img{
-  height: 4rem;
+  height: 3rem;
 }
 
 .text-block{
