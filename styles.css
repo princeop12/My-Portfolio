@@ -111,6 +111,12 @@ header menu{}
   justify-content: center;
 }
 
+.image-hold{
+  animation: fimg 1s forwards;
+  animation-delay: 4s;
+  opacity:0;
+}
+
 .image-hold img{
   margin: 10px 0; 
   justify-self: center; 
@@ -123,6 +129,31 @@ header menu{}
 
 .video-hold{
   justify-content:center;
+  animation: fvid 1s forwards;
+  animation-delay: 3s;
+  opacity:0;
+}
+
+@keyframes fimg {
+  0%{
+    opacity: 0;
+    margin-right: -400px;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+@keyframes fvid {
+  0%{
+    opacity: 0;
+    margin-left: -400px;
+  }
+
+  100%{
+    opacity: 100%;
+  }
 }
 
 .video-hold video{
