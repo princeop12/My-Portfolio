@@ -109,6 +109,7 @@ header menu{}
   /* border: 1px solid white; */
   /* width: fit-content; */
   justify-content: center;
+  margin-bottom: 50px !important;
 }
 
 .image-hold{
@@ -165,6 +166,25 @@ header menu{}
   width: 90%;
   max-width: 850px;
 }
+
+.line{
+  border:4px solid white;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.text-block{
+  margin-top: -40px !important;
+  background: black;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 50px auto;
+  width: fit-content;
+  border-radius: 10px;
+}
 @media (min-width: 769px) {
     header nav ul{
     display: flex;
@@ -203,6 +223,15 @@ header nav{
 
 header nav ul{
     
+}
+
+.line{
+  border: 3px solid white;
+}
+
+.text-block{
+  margin-top: -34px !important;
+  font-size:2rem;
 }
 
 .nav-menu {
