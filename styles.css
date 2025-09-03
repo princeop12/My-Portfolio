@@ -101,6 +101,20 @@ header menu{}
     justify-content: space-between;
     /* justify-content: space-around; */
 }
+
+.video-hold{
+  justify-content:center;
+}
+
+.video-hold video{
+  margin: 10px 0; 
+  justify-self: center; 
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 10px 5%;
+  width: 90%;
+  max-width: 850px;
+}
 @media (min-width: 769px) {
     header nav ul{
     display: flex;
