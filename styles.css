@@ -86,7 +86,18 @@ header menu{}
   }
 }
 
-#Contact img{
+#Contact{
+  margin-bottom: 70px;
+}
+
+.contact-info{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+#Contact img, #Communities img{
     width: 3.5rem;
     border: 2px solid white;
     height: 3.5rem;
@@ -167,10 +178,22 @@ header menu{}
   max-width: 850px;
 }
 
-.line{
-  border:4px solid white;
+.leaf{
+  display: flex;
   width: 90%;
-  max-width: 1300px;
+  max-width: 700px;
+  margin: 50px auto 100px auto;
+  justify-content: space-between;
+}
+
+.leaf img{
+  height: 6rem;
+}
+
+.line{
+  border:2px dotted white;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -192,7 +215,7 @@ header menu{}
     gap: 30px;
 }
 
-#Contact img{
+#Contact img, #Communities img{
     width: 6rem;
     border: 2px solid white;
     height: 6rem;
@@ -227,6 +250,12 @@ header nav ul{
 
 .line{
   border: 3px solid white;
+}
+.leaf{
+  justify-content: space-around;
+}
+.leaf img{
+  height: 4rem;
 }
 
 .text-block{
