@@ -102,6 +102,25 @@ header menu{}
     /* justify-content: space-around; */
 }
 
+.dev-flex{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  /* border: 1px solid white; */
+  /* width: fit-content; */
+  justify-content: center;
+}
+
+.image-hold img{
+  margin: 10px 0; 
+  justify-self: center; 
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: 10px 5%;
+  width: 90%;
+  max-width: 850px;
+}
+
 .video-hold{
   justify-content:center;
 }
