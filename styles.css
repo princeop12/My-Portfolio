@@ -96,6 +96,7 @@ header menu{}
     display: flex;
     /* border:1px solid white; */
     width: 75%;
+    max-width: 500px;
     justify-self: center;
     justify-content: space-between;
     /* justify-content: space-around; */
@@ -105,6 +106,13 @@ header menu{}
     display: flex;
     /* display:block; */
     gap: 30px;
+}
+
+#Contact img{
+    width: 6rem;
+    border: 2px solid white;
+    height: 6rem;
+    border-radius: 15px;
 }
 }
 @media (max-width: 768px) {
