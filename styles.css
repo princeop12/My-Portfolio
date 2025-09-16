@@ -157,7 +157,25 @@ header menu{}
   /* text-align: center; */
   opacity:0;
   animation: brighten 1s forwards;
-  animation-delay: 4s;
+  animation-delay: 5s;
+}
+
+.intro a{
+  color: yellow;
+  text-decoration: none;
+}
+
+.dintro{
+  padding: 5%;
+  /* text-align: center; */
+  opacity:0;
+  animation: brighten 1s forwards;
+  animation-delay: 9s;
+}
+
+.dintro a{
+  color: yellow;
+  text-decoration: none;
 }
 
 @keyframes brighten{
@@ -182,7 +200,7 @@ header menu{}
 
 .image-hold{
   animation: fimg 1s forwards;
-  animation-delay: 4s;
+  animation-delay: 11s;
   opacity:0;
 }
 
@@ -199,7 +217,7 @@ header menu{}
 .video-hold{
   justify-content:center;
   animation: fvid 1s forwards;
-  animation-delay: 3s;
+  animation-delay: 10s;
   opacity:0;
 }
 
