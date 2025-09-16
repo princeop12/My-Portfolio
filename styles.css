@@ -1,6 +1,8 @@
 body{
     background: black;
     color: white;
+    max-width: 1400px;
+    margin: auto;
 }
 
 header{
@@ -211,7 +213,7 @@ header menu{}
   border-radius: 5px;
   margin: 10px 5%;
   width: 90%;
-  max-width: 850px;
+  max-width: 690px;
 }
 
 .video-hold{
@@ -250,7 +252,7 @@ header menu{}
   border-radius: 5px;
   margin: 10px 5%;
   width: 90%;
-  max-width: 850px;
+  max-width: 690px;
 }
 
 .leaf{
@@ -288,6 +290,24 @@ header menu{}
     display: flex;
     /* display:block; */
     gap: 30px;
+}
+
+.intro{
+  padding: 5%;
+  /* text-align: center; */
+  opacity:0;
+  animation: brighten 1s forwards;
+  animation-delay: 5s;
+  font-size: 1.3rem;
+}
+
+.dintro{
+  padding: 5%;
+  /* text-align: center; */
+  opacity:0;
+  animation: brighten 1s forwards;
+  animation-delay: 9s;
+  font-size: 1.3rem;
 }
 
 #Contact img, #Communities img{
